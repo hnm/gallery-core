@@ -1,0 +1,14 @@
+gallery_link_label = "Lien pour la galerie"
+
+;;;;;;;;;;;;;;;;;;;
+; ROCKET
+;;;;;;;;;;;;;;;;;;;
+manage_multi_upload_title = "Lien de téléchargement {gallery_name}"
+manage_cmd_multi_upload_label = "Lien de téléchargement multiple"
+manage_gallery_group_label = "Groupe de galerie"
+manage_display_root_group_in_breadcrumb_label = "Indique le groupe choisi dans Breadcrump"
+manage_num_elements_per_row_label = "Nombre d'image par ligne"
+manage_cmd_default_image_label = "Fixer l'imgae comme titre"
+manage_cmd_default_image_tooltip = "Mettre cette image comme image de titre dans la galerie "
+manage_cmd_active_default_image_label = "Image de titre de la galerie"
+manage_cmd_active_default_image_tooltip = "Cette image ets l'image de titre de la galerie"

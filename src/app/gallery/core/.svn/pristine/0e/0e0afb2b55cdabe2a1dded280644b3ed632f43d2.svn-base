@@ -1,0 +1,13 @@
+back_txt = "Zurück"
+gallery_link_label = "zur Galerie"
+overview_txt = "Übersicht"
+
+;;;;;;;;;;;;;;;;;;;
+; ROCKET
+;;;;;;;;;;;;;;;;;;;
+manage_display_root_group_in_breadcrumb_label = "Ausgewählte Gruppe in Breadcrumb anzeigen"
+manage_num_elements_per_row_label = "Anzahl Galerien pro Reihe"
+manage_cmd_default_image_label = "Als Titelbild der Galerie setzen"
+manage_cmd_default_image_tooltip = "Dieses Bild als Titelbild der Galerie setzen"
+manage_cmd_active_default_image_label = "Titelbild der Galerie"
+manage_cmd_active_default_image_tooltip = "Dieses Bild ist das Titelbild der Galerie"

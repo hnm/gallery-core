@@ -1,0 +1,168 @@
+{
+    "gallery\\root\\\bo\\GalleryGroupPageController": {
+        "rootGalleryGroup": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\relation\\ManyToOnePropDef",
+            "props": {
+                "props": {
+                    "targetEntityClass": "gallery\\root\\\bo\\GalleryGroup",
+                    "cascadeType": [],
+                    "fetchType": "lazy"
+                }
+            }
+        },
+        "displayRootGroupInBreadcrumb": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\scalar\\StringPropDef",
+            "props": {
+                "length": "255",
+                "charset": null
+            }
+        },
+        "numElementsPerRow": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\scalar\\StringPropDef",
+            "props": {
+                "length": "255",
+                "charset": null
+            }
+        }
+    },
+    "gallery\\core\\bo\\GalleryGroup": {
+        "id": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\scalar\\IntegerPropDef",
+            "props": {
+                "size": "32",
+                "signed": false
+            }
+        },
+        "galleries": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\relation\\OneToManyPropDef",
+            "props": {
+                "targetEntityClass": "gallery\\core\\bo\\Gallery",
+                "mappedBy": "galleryGroup",
+                "cascadeType": {
+                    "1": "1",
+                    "2": "2",
+                    "4": "4",
+                    "8": "8",
+                    "16": "16"
+                },
+                "fetchType": "lazy",
+                "orphanRemoval": false
+            }
+        },
+        "defaultImage": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\ManagedFilePropDef",
+            "props": {
+                "length": "255"
+            }
+        },
+        "online": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\scalar\\BooleanPropDef",
+            "props": {
+                "required": false
+            }
+        },
+        "lft": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\scalar\\IntegerPropDef",
+            "props": {
+                "size": "32",
+                "signed": false
+            }
+        },
+        "rgt": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\scalar\\IntegerPropDef",
+            "props": {
+                "size": "32",
+                "signed": false
+            }
+        },
+        "galleryGroupTs": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\relation\\OneToManyPropDef",
+            "props": {
+                "targetEntityClass": "gallery\\core\\bo\\GalleryGroupT",
+                "mappedBy": "galleryGroup",
+                "cascadeType": {
+                    "1": "1",
+                    "2": "2",
+                    "4": "4",
+                    "8": "8",
+                    "16": "16"
+                },
+                "fetchType": "lazy",
+                "orphanRemoval": true
+            }
+        }
+    },
+    "gallery\\core\\bo\\GalleryImage": {
+        "id": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\scalar\\IntegerPropDef",
+            "props": {
+                "size": "32",
+                "signed": false
+            }
+        },
+        "fileImage": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\ManagedFilePropDef",
+            "props": {
+                "length": "255"
+            }
+        },
+        "gallery": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\relation\\ManyToOnePropDef",
+            "props": {
+                "targetEntityClass": "gallery\\core\\bo\\Gallery",
+                "mappedBy": null,
+                "cascadeType": [],
+                "fetchType": "lazy"
+            }
+        },
+        "galleryImageTs": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\relation\\OneToManyPropDef",
+            "props": {
+                "targetEntityClass": "gallery\\core\\bo\\GalleryImageT",
+                "mappedBy": "galleryImage",
+                "cascadeType": {
+                    "1": "1",
+                    "2": "2",
+                    "4": "4",
+                    "8": "8",
+                    "16": "16"
+                },
+                "fetchType": "lazy",
+                "orphanRemoval": true
+            }
+        },
+        "created": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\DateTimePropDef",
+            "props": {
+                "required": false
+            }
+        },
+        "createdBy": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\scalar\\StringPropDef",
+            "props": {
+                "length": "255",
+                "charset": null
+            }
+        },
+        "lastMod": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\DateTimePropDef",
+            "props": {
+                "required": false
+            }
+        },
+        "lastModBy": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\scalar\\StringPropDef",
+            "props": {
+                "length": "255",
+                "charset": null
+            }
+        },
+        "orderIndex": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\scalar\\IntegerPropDef",
+            "props": {
+                "size": "32",
+                "signed": false
+            }
+        }
+    }
+}
