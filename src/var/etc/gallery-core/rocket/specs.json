@@ -8,6 +8,12 @@
             "pluralLabel": "Galerien",
             "iconType": null,
             "identityStringPattern": "{galleryTs.name}",
+            "filterData": {
+                "useAnd": true,
+                "items": [],
+                "groups": []
+            },
+            "defaultSort": [],
             "fields": {
                 "online": {
                     "class": "rocket\\impl\\ei\\component\\prop\\bool\\OnlineEiProp",
@@ -22,6 +28,25 @@
                     "label": "Online",
                     "objectProperty": "online",
                     "entityProperty": "online"
+                },
+                "galleryTs": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\translation\\TranslationEiProp",
+                    "props": {
+                        "draftable": false,
+                        "useSystemN2nLocales": true,
+                        "systenN2nLocaleDefs": [
+                            {
+                                "id": "de_CH",
+                                "mandatory": false,
+                                "label": null
+                            }
+                        ],
+                        "customN2nLocaleDefs": [],
+                        "min": "1"
+                    },
+                    "label": "Gallery Ts",
+                    "objectProperty": "galleryTs",
+                    "entityProperty": "galleryTs"
                 },
                 "defaultGalleryImage": {
                     "class": "rocket\\impl\\ei\\component\\prop\\relation\\ManyToOneSelectEiProp",
@@ -43,35 +68,6 @@
                     "label": "Titelbild",
                     "objectProperty": "defaultGalleryImage",
                     "entityProperty": "defaultGalleryImage"
-                },
-                "galleryTs": {
-                    "class": "rocket\\impl\\ei\\component\\prop\\translation\\TranslationEiProp",
-                    "props": {
-                        "draftable": false,
-                        "useSystemN2nLocales": true,
-                        "systenN2nLocaleDefs": [
-                            {
-                                "id": "de_CH",
-                                "mandatory": false,
-                                "label": null
-                            },
-                            {
-                                "id": "en",
-                                "mandatory": false,
-                                "label": null
-                            },
-                            {
-                                "id": "fr_CH",
-                                "mandatory": false,
-                                "label": null
-                            }
-                        ],
-                        "customN2nLocaleDefs": [],
-                        "min": "1"
-                    },
-                    "label": "Gallery Ts",
-                    "objectProperty": "galleryTs",
-                    "entityProperty": "galleryTs"
                 },
                 "password": {
                     "class": "rocket\\impl\\ei\\component\\prop\\string\\StringEiProp",
@@ -143,7 +139,7 @@
                         "targetRemovalStrategy": "prevent",
                         "embeddedAddEnabled": false,
                         "filtered": false,
-                        "hiddenIfTargetEmpty": false
+                        "hiddenIfTargetEmpty": true
                     },
                     "label": "Gallery Group",
                     "objectProperty": "galleryGroup",
