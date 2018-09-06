@@ -1,10 +1,11 @@
 {
-    "name": "hnm/gallery-core",
-    "type": "n2n-module",
-    "description": "Gallery core module",
-    "keywords": ["gallery","n2n-module", "n2n"],
+    "name": "hnm/event",
+    "type": "n2n-tmpl-module",
+    "description": "Default Content Items for n2n",
+    "keywords": ["n2n-tmpl-module", "n2n-module", "n2n"],
     "homepage": "https://n2n.rocks/",
     "license": "MIT",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Thomas Günther",
@@ -18,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "gallery\\core\\": "src/app/gallery/core"
+            "event\\": "src/app/event"
         }
     }
 }

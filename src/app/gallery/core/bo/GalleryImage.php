@@ -20,7 +20,6 @@ use n2n\util\StringUtils;
 use rocket\impl\ei\component\prop\translation\Translator;
 use n2n\persistence\orm\annotation\AnnoTable;
 use n2n\persistence\orm\annotation\AnnoDateTime;
-use n2n\reflection\ArgUtils;
 
 class GalleryImage extends ObjectAdapter {
 	private static function _annos(AnnoInit $ai) {

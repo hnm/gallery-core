@@ -1,22 +1,22 @@
 <?php
 namespace gallery\core\ei;
 
-use rocket\spec\ei\manage\util\model\Eiu;
 use n2n\web\http\controller\ControllerAdapter;
-use rocket\spec\ei\manage\control\EntryControlComponent;
 use n2n\impl\web\ui\view\html\HtmlView;
 use n2n\l10n\DynamicTextCollection;
-use rocket\spec\ei\manage\control\HrefControl;
-use rocket\spec\ei\manage\control\ControlButton;
-use rocket\spec\ei\manage\control\IconType;
 use n2n\l10n\N2nLocale;
 use n2n\web\http\controller\Controller;
-use rocket\spec\ei\manage\util\model\EiuCtrl;
 use n2n\util\uri\Path;
 use n2n\reflection\CastUtils;
 use gallery\core\bo\GalleryImage;
 use rocket\impl\ei\component\command\IndependentEiCommandAdapter;
 use n2n\core\container\N2nContext;
+use rocket\ei\manage\control\EntryControlComponent;
+use rocket\ei\util\model\Eiu;
+use rocket\ei\manage\control\ControlButton;
+use rocket\ei\manage\control\HrefControl;
+use rocket\ei\manage\control\IconType;
+use rocket\ei\util\model\EiuCtrl;
 
 class DefaultImageEiCommand extends IndependentEiCommandAdapter implements EntryControlComponent {
 	const CONTROL_KEY = 'default';
@@ -37,7 +37,7 @@ class DefaultImageEiCommand extends IndependentEiCommandAdapter implements Entry
 		return array(self::CONTROL_KEY => 'Default');
 	}
 	
-	public function createEntryHrefControls(Eiu $eiu, HtmlView $view): array {
+	public function createEntryControls(Eiu $eiu, HtmlView $view): array {
 		$hrefControls = array();
 	
 		$galleryImage = $eiu->entry()->getLiveEntry()->getEntityObj();
@@ -58,8 +58,6 @@ class DefaultImageEiCommand extends IndependentEiCommandAdapter implements Entry
 				new ControlButton($label, $tooltip, true, $controlType, IconType::ICON_IMAGE));
 		
 		return $hrefControls;
-	}
-	public function createEntryControls(Eiu $eiu, HtmlView $view): array {
 	}
 
 }
