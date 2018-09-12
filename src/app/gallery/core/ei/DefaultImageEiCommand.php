@@ -11,19 +11,19 @@ use n2n\reflection\CastUtils;
 use gallery\core\bo\GalleryImage;
 use rocket\impl\ei\component\command\IndependentEiCommandAdapter;
 use n2n\core\container\N2nContext;
-use rocket\ei\manage\control\EntryControlComponent;
-use rocket\ei\util\model\Eiu;
+use rocket\ei\component\command\control\EntryControlComponent;
+use rocket\ei\util\Eiu;
 use rocket\ei\manage\control\ControlButton;
 use rocket\ei\manage\control\HrefControl;
 use rocket\ei\manage\control\IconType;
-use rocket\ei\util\model\EiuCtrl;
+use rocket\ei\util\EiuCtrl;
 
 class DefaultImageEiCommand extends IndependentEiCommandAdapter implements EntryControlComponent {
 	const CONTROL_KEY = 'default';
 	
 	/**
 	 * {@inheritDoc}
-	 * @see \rocket\spec\ei\component\command\EiCommand::lookupController()
+	 * @see \rocket\ei\component\command\EiCommand::lookupController()
 	 */
 	public function lookupController(Eiu $eiu): Controller {
 		return $eiu->lookup(DefaultImageController::class);	
@@ -31,7 +31,7 @@ class DefaultImageEiCommand extends IndependentEiCommandAdapter implements Entry
 	
 	/**
 	 * {@inheritDoc}
-	 * @see \rocket\spec\ei\manage\control\EntryControlComponent::createEntryHrefControls()
+	 * @see \rocket\ei\component\command\control\EntryControlComponent::getEntryControlOptions()
 	 */
 	public function getEntryControlOptions(N2nContext $n2nContext, N2nLocale $n2nLocale): array {
 		return array(self::CONTROL_KEY => 'Default');
