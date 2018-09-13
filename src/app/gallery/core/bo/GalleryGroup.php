@@ -12,9 +12,7 @@ use n2n\web\http\orm\ResponseCacheClearer;
 use rocket\impl\ei\component\prop\translation\Translator;
 use n2n\l10n\N2nLocale;
 use n2n\reflection\CastUtils;
-use gallery\core\bo\Gallery;
 use n2n\io\managed\File;
-use gallery\core\bo\GalleryGroupT;
 use n2n\persistence\orm\annotation\AnnoManagedFile;
 
 class GalleryGroup extends ObjectAdapter {

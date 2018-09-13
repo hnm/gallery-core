@@ -7,7 +7,6 @@ use gallery\core\model\GalleryDao;
 use gallery\core\model\GalleryState;
 use n2n\web\http\PageNotFoundException;
 use n2n\web\http\Response;
-use gallery\core\config\GalleryConfig;
 
 class GalleryGroupController extends GalleryControllerAdapter {
 	private static function _annos(AnnoInit $ai) {
