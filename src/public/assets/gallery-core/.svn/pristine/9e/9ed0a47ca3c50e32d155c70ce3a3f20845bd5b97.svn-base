@@ -1,7 +1,0 @@
-[orm]
-entities[] = "gallery\\core\bo\Gallery"
-entities[] = "gallery\\core\bo\GalleryT"
-entities[] = "gallery\\core\bo\GalleryImage"
-entities[] = "gallery\\core\bo\GalleryImageT"
-entities[] = "gallery\\core\bo\GalleryGroup"
-entities[] = "gallery\\core\bo\GalleryGroupT"
