@@ -255,6 +255,12 @@
             "label": "Galerie-Bild",
             "pluralLabel": "Galerie-Bilder",
             "iconType": null,
+            "filterData": {
+                "useAnd": true,
+                "items": [],
+                "groups": []
+            },
+            "defaultSort": [],
             "fields": {
                 "galleryImageTs": {
                     "class": "rocket\\impl\\ei\\component\\prop\\translation\\TranslationEiProp",
@@ -305,7 +311,8 @@
                         "dimensionImportMode": "usedOnly",
                         "extraThumbDimensions": [],
                         "checkImageResourceMemory": true,
-                        "multiUploadAvailable": true
+                        "multiUploadAvailable": true,
+                        "multiUploadOrder": "file-name-asc"
                     },
                     "label": "Bild",
                     "objectProperty": "fileImage",
