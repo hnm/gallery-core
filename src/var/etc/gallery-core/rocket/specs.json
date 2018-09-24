@@ -8,11 +8,6 @@
             "pluralLabel": "Galerien",
             "iconType": null,
             "identityStringPattern": "{galleryTs.name}",
-            "filterData": {
-                "useAnd": true,
-                "items": [],
-                "groups": []
-            },
             "defaultSort": [],
             "fields": {
                 "online": {
@@ -255,11 +250,6 @@
             "label": "Galerie-Bild",
             "pluralLabel": "Galerie-Bilder",
             "iconType": null,
-            "filterData": {
-                "useAnd": true,
-                "items": [],
-                "groups": []
-            },
             "defaultSort": [],
             "fields": {
                 "galleryImageTs": {
