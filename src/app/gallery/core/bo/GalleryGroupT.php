@@ -12,6 +12,7 @@ use n2n\persistence\orm\annotation\AnnoManagedFile;
 use n2n\io\managed\File;
 use rocket\impl\ei\component\prop\translation\Translatable;
 use n2n\persistence\orm\annotation\AnnoTable;
+use n2n\reflection\CastUtils;
 
 class GalleryGroupT extends ObjectAdapter implements Translatable {
 	private static function _annos(AnnoInit $ai) {
@@ -99,7 +100,14 @@ class GalleryGroupT extends ObjectAdapter implements Translatable {
 		if (null !== $this->getGalleryGroup()->getDefaultImage()) return  $this->getGalleryGroup()->getDefaultImage();
 		
 		$galleries = $this->galleryGroup->getGalleries();
-		if (count($galleries) > 0) return $galleries->offsetGet(0)->determineTitleImage();
+		if (count($galleries) > 0) {
+			$firstGallery = $galleries->offsetGet(0);
+			if (null !== $firstGallery) {
+				CastUtils::assertTrue($firstGallery instanceof Gallery);
+				if (null !== ($firstGalleryT= $firstGallery->t($this->n2nLocale))) return $firstGalleryT->determineTitleImage();
+				if (null !== $galleryImage = $firstGallery->getDefaultGalleryImage()) return $galleryImage->getFileImage();
+			}
+		}
 		return null;
 	}
 }
