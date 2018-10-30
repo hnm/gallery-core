@@ -406,6 +406,9 @@
                 "editEiCommand": {
                     "class": "rocket\\impl\\ei\\component\\command\\common\\EditEiCommand",
                     "props": []
+                },
+                "imageCommentEiCommand": {
+                	"class": "gallery\\core\\ei\\ImageCommentEiCommand"
                 }
             },
             "partialControlOrder": [],

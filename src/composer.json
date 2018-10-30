@@ -1,7 +1,7 @@
 {
-    "name": "hnm/event",
-    "type": "n2n-tmpl-module",
-    "description": "Default Content Items for n2n",
+    "name": "hnm/gallery-core",
+    "type": "project",
+    "description": "Projekt for Gallery Module",
     "keywords": ["n2n-tmpl-module", "n2n-module", "n2n"],
     "homepage": "https://n2n.rocks/",
     "license": "MIT",
@@ -17,9 +17,7 @@
         "n2n/n2n-composer-module-installer": "dev-master",
         "n2n/rocket": "dev-master"
     },
-    "autoload": {
-        "psr-4": {
-            "event\\": "src/app/event"
-        }
-    }
+	"require-dev" : {
+		"n2n/hangar" : "master-dev"
+	}
 }
