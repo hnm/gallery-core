@@ -58,7 +58,9 @@ class GalleryImage extends ObjectAdapter {
 		$prettyName = implode(' ', $prettyNameParts);
 		
 		$title = (isset($iptc[GalleryUtils::IPTC_KEY_TITLE])) ? $iptc[GalleryUtils::IPTC_KEY_TITLE] : $prettyName;
-		$description = (isset($iptc[GalleryUtils::IPTC_KEY_DESCRIPTION])) ? $iptc[GalleryUtils::IPTC_KEY_DESCRIPTION] : $prettyName;
+		
+		//Don't set the description as pretty name - Moco task 25.10.2018 
+		$description = (isset($iptc[GalleryUtils::IPTC_KEY_DESCRIPTION])) ? $iptc[GalleryUtils::IPTC_KEY_DESCRIPTION] : null;
 		$tags = isset($iptc[GalleryUtils::IPTC_KEY_KEY_WORDS]) ? StringUtils::reduce($iptc[GalleryUtils::IPTC_KEY_KEY_WORDS], 255) : null;
 		
 		$gt = null;

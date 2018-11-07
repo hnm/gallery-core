@@ -1,1 +1,9 @@
-{}
+{
+    "startLaunchPadId": "gallery-core-gallery",
+    "menuGroups": {
+        "Galerie": {
+            "gallery-core-gallery": null,
+            "gallery-core-gallery-group": null
+        }
+    }
+}
