@@ -34,16 +34,5 @@ class ImageCommentEiCommand extends IndependentEiCommandAdapter implements Overa
 	 */
 	public function lookupController(Eiu $eiu): Controller {
 		return $eiu->lookup(ImageCommentController::class);
-	}
-
-	/**
-	 * {@inheritDoc}
-	 * @see \rocket\ei\component\IndependentEiComponent::__construct()
-	 */
-	public function __construct() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	
+	}	
 }
