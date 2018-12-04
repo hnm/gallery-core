@@ -25,7 +25,7 @@
 		<?php $eiuEntryForm = $formHtml->meta()->getMapValue()->getObject() ?>
 		<?php $view->assert($eiuEntryForm instanceof EiuEntryForm) ?>
 		<?php $eiuEntryGui = $eiuEntryForm->getChosenEiuEntryTypeForm()->getEiuEntryGui() ?>
-		<?php $eiuEntry = $eiuEntryGui->getEiuEntry() ?>
+		<?php $eiuEntry = $eiuEntryGui->entry() ?>
 		
 		<?php $eiuHtml->entryOpen('div', $eiuEntryGui, ['class' => 'rocket-group rocket-simple-group']) ?>
 			<label><?php $html->text('image_txt', ['num' => $formHtml->meta()->getArrayKey() + 1 . '.']) ?></label>
