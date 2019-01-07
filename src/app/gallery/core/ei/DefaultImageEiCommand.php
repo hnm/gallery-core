@@ -7,7 +7,7 @@ use n2n\l10n\DynamicTextCollection;
 use n2n\l10n\N2nLocale;
 use n2n\web\http\controller\Controller;
 use n2n\util\uri\Path;
-use n2n\reflection\CastUtils;
+use n2n\util\type\CastUtils;
 use gallery\core\bo\GalleryImage;
 use rocket\impl\ei\component\command\IndependentEiCommandAdapter;
 use n2n\core\container\N2nContext;

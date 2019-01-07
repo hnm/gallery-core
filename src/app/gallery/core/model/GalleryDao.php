@@ -7,7 +7,7 @@ use gallery\core\bo\GalleryGroup;
 use gallery\core\bo\GalleryGroupT;
 use n2n\persistence\orm\util\NestedSetUtils;
 use gallery\core\bo\Gallery;
-use n2n\reflection\CastUtils;
+use n2n\util\type\CastUtils;
 use gallery\core\bo\GalleryT;
 
 class GalleryDao implements RequestScoped {

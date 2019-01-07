@@ -11,7 +11,7 @@ use n2n\persistence\orm\annotation\AnnoEntityListeners;
 use n2n\web\http\orm\ResponseCacheClearer;
 use rocket\impl\ei\component\prop\translation\Translator;
 use n2n\l10n\N2nLocale;
-use n2n\reflection\CastUtils;
+use n2n\util\type\CastUtils;
 use n2n\io\managed\File;
 use n2n\persistence\orm\annotation\AnnoManagedFile;
 

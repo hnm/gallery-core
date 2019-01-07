@@ -1,7 +1,7 @@
 <?php
 	use gallery\core\model\GalleryState;
 	use n2n\impl\web\ui\view\html\HtmlView;
-	use n2n\reflection\CastUtils;
+	use n2n\util\type\CastUtils;
 	use gallery\core\model\Breadcrumb;
 	
 	$view = HtmlView::view($this);
