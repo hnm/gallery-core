@@ -12,7 +12,7 @@ use n2n\persistence\orm\annotation\AnnoManagedFile;
 use n2n\io\managed\File;
 use rocket\impl\ei\component\prop\translation\Translatable;
 use n2n\persistence\orm\annotation\AnnoTable;
-use n2n\reflection\CastUtils;
+use n2n\util\type\CastUtils;
 
 class GalleryGroupT extends ObjectAdapter implements Translatable {
 	private static function _annos(AnnoInit $ai) {
