@@ -102,7 +102,7 @@ class GalleryDao implements RequestScoped {
 		
 		$nsu = new NestedSetUtils($this->em, GalleryGroup::getClass());
 		
-		$childGalleryGroups = array();
+// 		$childGalleryGroups = array();
 		$level = null;
 		foreach ($nsu->fetch($galleryGroup, true) as $nsi) {
 			$childGalleryGroup = $nsi->getEntityObj();
