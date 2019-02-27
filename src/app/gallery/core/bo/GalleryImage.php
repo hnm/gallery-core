@@ -66,7 +66,7 @@ class GalleryImage extends ObjectAdapter {
 		$gt = null;
 		
 		if ($this->galleryImageTs->count() === 1) {
-			$gt = ArrayUtils::first($this->galleryImageTs);
+			$gt = ArrayUtils::first($this->galleryImageTs->getArrayCopy());
 		} else {
 			$gt = new GalleryImageT();
 			$this->setCreated(new \DateTime());
