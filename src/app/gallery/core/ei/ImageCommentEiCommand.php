@@ -5,8 +5,8 @@ use rocket\impl\ei\component\command\IndependentEiCommandAdapter;
 use rocket\ei\component\command\control\OverallControlComponent;
 use rocket\ei\util\Eiu;
 use n2n\impl\web\ui\view\html\HtmlView;
-use rocket\ei\manage\control\ControlButton;
-use rocket\ei\manage\control\IconType;
+use rocket\si\control\SiButton;
+use rocket\si\control\SiIconType;
 use n2n\web\http\controller\Controller;
 
 class ImageCommentEiCommand extends IndependentEiCommandAdapter implements OverallControlComponent {
@@ -22,8 +22,8 @@ class ImageCommentEiCommand extends IndependentEiCommandAdapter implements Overa
 	 */
 	public function createOverallControls(Eiu $eiu, HtmlView $view): array {
 		$dtc = $eiu->dtc('gallery-core');
-		$cb = new ControlButton($dtc->t('comment_images_txt'));
-		$cb->setIconType(IconType::ICON_COMMENT);
+		$cb = new SiButton($dtc->t('comment_images_txt'));
+		$cb->setIconType(SiIconType::ICON_COMMENT);
 		
 		return [$eiu->frame()->controlFactory($this)->createJhtml($cb)];
 	}

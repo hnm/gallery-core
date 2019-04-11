@@ -13,9 +13,9 @@ use rocket\impl\ei\component\command\IndependentEiCommandAdapter;
 use n2n\core\container\N2nContext;
 use rocket\ei\component\command\control\EntryControlComponent;
 use rocket\ei\util\Eiu;
-use rocket\ei\manage\control\ControlButton;
+use rocket\si\control\SiButton;
 use rocket\ei\manage\control\HrefControl;
-use rocket\ei\manage\control\IconType;
+use rocket\si\control\SiIconType;
 use rocket\ei\util\EiuCtrl;
 
 class DefaultImageEiCommand extends IndependentEiCommandAdapter implements EntryControlComponent {
@@ -43,10 +43,10 @@ class DefaultImageEiCommand extends IndependentEiCommandAdapter implements Entry
 		$galleryImage = $eiu->entry()->getLiveEntry()->getEntityObj();
 		CastUtils::assertTrue($galleryImage instanceof GalleryImage);
 		
-		$controlType = ControlButton::TYPE_DEFAULT;
+		$controlType = SiButton::TYPE_DEFAULT;
 		
 		if ($galleryImage->getGallery()->getDefaultGalleryImage() === $galleryImage) {
-			$controlType = ControlButton::TYPE_WARNING;
+			$controlType = SiButton::TYPE_WARNING;
 		}
 		
 		$dtc = new DynamicTextCollection('gallery', $view->getN2nLocale());
@@ -55,7 +55,7 @@ class DefaultImageEiCommand extends IndependentEiCommandAdapter implements Entry
 		$tooltip = $dtc->t('ei_impl_edit_entry_tooltip', array('entry' => $eiu->frame()->getGenericLabel()));
 		$hrefControls[] = HrefControl::create($eiu->frame()->getEiFrame(), $this, 
 				(new Path(array($eiu->entry()->getLiveIdRep())))->toUrl(),
-				new ControlButton($label, $tooltip, true, $controlType, IconType::ICON_IMAGE));
+				new SiButton($label, $tooltip, true, $controlType, SiIconType::ICON_IMAGE));
 		
 		return $hrefControls;
 	}
