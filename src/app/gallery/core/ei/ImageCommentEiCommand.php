@@ -2,25 +2,20 @@
 namespace gallery\core\ei;
 
 use rocket\impl\ei\component\command\IndependentEiCommandAdapter;
-use rocket\ei\component\command\control\OverallControlComponent;
 use rocket\ei\util\Eiu;
 use n2n\impl\web\ui\view\html\HtmlView;
-use rocket\si\control\SiButton;
 use rocket\si\control\SiIconType;
 use n2n\web\http\controller\Controller;
+use rocket\si\control\SiButton;
 
-class ImageCommentEiCommand extends IndependentEiCommandAdapter implements OverallControlComponent {
+class ImageCommentEiCommand extends IndependentEiCommandAdapter {
 	const CONTROL_KEY = 'image-comment';
 	
 	public function getOverallControlOptions(\n2n\l10n\N2nLocale $n2nLocale) {
 		return [self::CONTROL_KEY => 'Comment Images'];
 	}
 
-	/**
-	 * {@inheritDoc}
-	 * @see \rocket\ei\component\command\control\OverallControlComponent::createOverallControls()
-	 */
-	public function createOverallControls(Eiu $eiu, HtmlView $view): array {
+	public function createOverallControls(Eiu $eiu): array {
 		$dtc = $eiu->dtc('gallery-core');
 		$cb = new SiButton($dtc->t('comment_images_txt'));
 		$cb->setIconType(SiIconType::ICON_COMMENT);

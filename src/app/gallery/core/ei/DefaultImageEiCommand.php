@@ -37,7 +37,7 @@ class DefaultImageEiCommand extends IndependentEiCommandAdapter implements Entry
 		return array(self::CONTROL_KEY => 'Default');
 	}
 	
-	public function createEntryControls(Eiu $eiu, HtmlView $view): array {
+	public function createEntryControls(Eiu $eiu): array {
 		$hrefControls = array();
 	
 		$galleryImage = $eiu->entry()->getLiveEntry()->getEntityObj();
