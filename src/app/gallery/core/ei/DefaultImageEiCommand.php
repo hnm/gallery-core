@@ -11,14 +11,14 @@ use n2n\util\type\CastUtils;
 use gallery\core\bo\GalleryImage;
 use rocket\impl\ei\component\command\IndependentEiCommandAdapter;
 use n2n\core\container\N2nContext;
-use rocket\ei\component\command\control\EntryControlComponent;
+use rocket\ei\component\command\control\EntryGuiControlComponent;
 use rocket\ei\util\Eiu;
 use rocket\si\control\SiButton;
-use rocket\ei\manage\control\HrefControl;
+use rocket\ei\manage\gui\control\HrefControl;
 use rocket\si\control\SiIconType;
 use rocket\ei\util\EiuCtrl;
 
-class DefaultImageEiCommand extends IndependentEiCommandAdapter implements EntryControlComponent {
+class DefaultImageEiCommand extends IndependentEiCommandAdapter implements EntryGuiControlComponent {
 	const CONTROL_KEY = 'default';
 	
 	/**
@@ -31,13 +31,13 @@ class DefaultImageEiCommand extends IndependentEiCommandAdapter implements Entry
 	
 	/**
 	 * {@inheritDoc}
-	 * @see \rocket\ei\component\command\control\EntryControlComponent::getEntryControlOptions()
+	 * @see \rocket\ei\component\command\control\EntryGuiControlComponent::getEntryGuiControlOptions()
 	 */
-	public function getEntryControlOptions(N2nContext $n2nContext, N2nLocale $n2nLocale): array {
+	public function getEntryGuiControlOptions(N2nContext $n2nContext, N2nLocale $n2nLocale): array {
 		return array(self::CONTROL_KEY => 'Default');
 	}
 	
-	public function createEntryControls(Eiu $eiu): array {
+	public function createEntryGuiControls(Eiu $eiu): array {
 		$hrefControls = array();
 	
 		$galleryImage = $eiu->entry()->getLiveEntry()->getEntityObj();
