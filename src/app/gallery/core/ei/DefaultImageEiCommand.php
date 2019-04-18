@@ -19,7 +19,7 @@ use rocket\si\control\SiIconType;
 use rocket\ei\util\EiuCtrl;
 
 class DefaultImageEiCommand extends IndependentEiCommandAdapter implements EntryGuiControlComponent {
-	const CONTROL_KEY = 'default';
+	const CONTROL_EDIT_KEY = 'default';
 	
 	/**
 	 * {@inheritDoc}

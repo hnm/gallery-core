@@ -9,7 +9,7 @@ use n2n\web\http\controller\Controller;
 use rocket\si\control\SiButton;
 
 class ImageCommentEiCommand extends IndependentEiCommandAdapter {
-	const CONTROL_KEY = 'image-comment';
+	const CONTROL_EDIT_KEY = 'image-comment';
 	
 	public function getOverallControlOptions(\n2n\l10n\N2nLocale $n2nLocale) {
 		return [self::CONTROL_KEY => 'Comment Images'];
