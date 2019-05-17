@@ -20,7 +20,7 @@ class ImageCommentEiCommand extends IndependentEiCommandAdapter {
 		$cb = new SiButton($dtc->t('comment_images_txt'));
 		$cb->setIconType(SiIconType::ICON_COMMENT);
 		
-		return [$eiu->frame()->controlFactory($this)->createJhtml($cb)];
+		return [$eiu->gui()->controlFactory($this)->createJhtml($cb)];
 	}
 
 	/**
