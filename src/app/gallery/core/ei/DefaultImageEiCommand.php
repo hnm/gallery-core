@@ -66,6 +66,8 @@ class DefaultImageEiCommand extends IndependentEiCommandAdapter implements Entry
 class DefaultImageController extends ControllerAdapter {
 	
 	public function index(EiuCtrl $eiuCtrl, $idRep) {
+		
+		
 		$eiSelection = $eiuCtrl->lookupEiSelection($idRep);
 		
 		$galleryImage = $eiSelection->getLiveObject();

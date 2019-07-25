@@ -30,7 +30,7 @@
 		<?php $eiuHtml->entryOpen('div', $eiuEntryGui, ['class' => 'rocket-group rocket-simple-group']) ?>
 			<label><?php $html->text('image_txt', ['num' => $formHtml->meta()->getArrayKey() + 1 . '.']) ?></label>
 			
-			<div class="rocket-control row">
+			<div class="rocket-structure-content row">
 				<div class="col-md-3">
 					<?php $html->image($eiuEntry->getValue('fileImage'), null, ['class' => 'img-fluid']) ?>
 				</div>
