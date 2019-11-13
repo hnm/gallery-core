@@ -1,22 +1,19 @@
 <?php
 namespace gallery\core\ei;
 
-use n2n\web\http\controller\ControllerAdapter;
-use n2n\impl\web\ui\view\html\HtmlView;
+use gallery\core\bo\GalleryImage;
+use n2n\core\container\N2nContext;
 use n2n\l10n\DynamicTextCollection;
 use n2n\l10n\N2nLocale;
-use n2n\web\http\controller\Controller;
-use n2n\util\uri\Path;
 use n2n\util\type\CastUtils;
-use gallery\core\bo\GalleryImage;
-use rocket\impl\ei\component\command\IndependentEiCommandAdapter;
-use n2n\core\container\N2nContext;
-use rocket\ei\component\command\control\EntryGuiControlComponent;
+use n2n\util\uri\Path;
+use n2n\web\http\controller\Controller;
+use n2n\web\http\controller\ControllerAdapter;
 use rocket\ei\util\Eiu;
-use rocket\si\control\SiButton;
-use rocket\ei\manage\gui\control\HrefControl;
-use rocket\si\control\SiIconType;
 use rocket\ei\util\EiuCtrl;
+use rocket\impl\ei\component\command\IndependentEiCommandAdapter;
+use rocket\si\control\SiButton;
+use rocket\si\control\SiIconType;
 
 class DefaultImageEiCommand extends IndependentEiCommandAdapter implements EntryGuiControlComponent {
 	const CONTROL_EDIT_KEY = 'default';

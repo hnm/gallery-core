@@ -9,7 +9,7 @@
             "iconType": null,
             "identityStringPattern": "{galleryTs.name}",
             "defaultSort": [],
-            "fields": {
+            "props": {
                 "online": {
                     "class": "rocket\\impl\\ei\\component\\prop\\bool\\OnlineEiProp",
                     "props": {
@@ -251,7 +251,7 @@
             "pluralLabel": "Galerie-Bilder",
             "iconType": null,
             "defaultSort": [],
-            "fields": {
+            "props": {
                 "galleryImageTs": {
                     "class": "rocket\\impl\\ei\\component\\prop\\translation\\TranslationEiProp",
                     "props": {
@@ -408,7 +408,8 @@
                     "props": []
                 },
                 "imageCommentEiCommand": {
-                	"class": "gallery\\core\\ei\\ImageCommentEiCommand"
+                    "class": "gallery\\core\\ei\\ImageCommentEiCommand",
+                    "props": []
                 }
             },
             "partialControlOrder": [],
@@ -427,7 +428,7 @@
             "pluralLabel": "Galerie Gruppen",
             "iconType": null,
             "identityStringPattern": "{galleryGroupTs.title}",
-            "fields": {
+            "props": {
                 "defaultImage": {
                     "class": "rocket\\impl\\ei\\component\\prop\\file\\FileEiProp",
                     "props": {
@@ -659,7 +660,7 @@
             "label": "Gallery T",
             "pluralLabel": "Gallery Ts",
             "iconType": null,
-            "fields": {
+            "props": {
                 "name": {
                     "class": "rocket\\impl\\ei\\component\\prop\\string\\StringEiProp",
                     "props": {
@@ -727,7 +728,7 @@
             "label": "Gallery Group T",
             "pluralLabel": "Gallery Group Ts",
             "iconType": null,
-            "fields": {
+            "props": {
                 "title": {
                     "class": "rocket\\impl\\ei\\component\\prop\\string\\StringEiProp",
                     "props": {
@@ -795,7 +796,7 @@
             "label": "Gallery Image T",
             "pluralLabel": "Gallery Image Ts",
             "iconType": null,
-            "fields": {
+            "props": {
                 "title": {
                     "class": "rocket\\impl\\ei\\component\\prop\\string\\StringEiProp",
                     "props": {
