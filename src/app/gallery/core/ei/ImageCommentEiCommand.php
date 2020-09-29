@@ -18,7 +18,7 @@ class ImageCommentEiCommand extends IndependentEiCommandAdapter {
 	public function createOverallControls(Eiu $eiu): array {
 		$dtc = $eiu->dtc('gallery-core');
 		$cb = new SiButton($dtc->t('comment_images_txt'));
-		$cb->setIconType(SiIconType::ICON_COMMENT);
+		$cb->setIconType(SiIconType::COMMENT);
 		
 		return [$eiu->guiFrame()->controlFactory($this)->createJhtml($cb)];
 	}

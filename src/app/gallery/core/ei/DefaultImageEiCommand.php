@@ -52,7 +52,7 @@ class DefaultImageEiCommand extends IndependentEiCommandAdapter implements Entry
 		$tooltip = $dtc->t('ei_impl_edit_entry_tooltip', array('entry' => $eiu->frame()->getGenericLabel()));
 		$hrefControls[] = HrefControl::create($eiu->frame()->getEiFrame(), $this, 
 				(new Path(array($eiu->entry()->getLiveIdRep())))->toUrl(),
-				new SiButton($label, $tooltip, true, $controlType, SiIconType::ICON_IMAGE));
+				new SiButton($label, $tooltip, true, $controlType, SiIconType::IMAGE));
 		
 		return $hrefControls;
 	}
