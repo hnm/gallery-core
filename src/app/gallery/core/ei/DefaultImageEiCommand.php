@@ -11,7 +11,7 @@ use n2n\web\http\controller\Controller;
 use n2n\web\http\controller\ControllerAdapter;
 use rocket\ei\util\Eiu;
 use rocket\ei\util\EiuCtrl;
-use rocket\impl\ei\component\command\IndependentEiCommandAdapter;
+use rocket\impl\ei\component\command\adapter\IndependentEiCommandAdapter;
 use rocket\si\control\SiButton;
 use rocket\si\control\SiIconType;
 
