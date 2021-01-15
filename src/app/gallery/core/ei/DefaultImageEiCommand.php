@@ -15,7 +15,7 @@ use rocket\impl\ei\component\command\adapter\IndependentEiCommandAdapter;
 use rocket\si\control\SiButton;
 use rocket\si\control\SiIconType;
 
-class DefaultImageEiCommand extends IndependentEiCommandAdapter implements EntryGuiControlComponent {
+class DefaultImageEiCommand extends IndependentEiCommandAdapter {
 	const CONTROL_EDIT_KEY = 'default';
 	
 	/**
@@ -28,7 +28,7 @@ class DefaultImageEiCommand extends IndependentEiCommandAdapter implements Entry
 	
 	/**
 	 * {@inheritDoc}
-	 * @see \rocket\ei\component\command\control\EntryGuiControlComponent::getEntryGuiControlOptions()
+	 * @see \rocket\ei\component\command\control\\GuiControlComponent::getEntryGuiControlOptions()
 	 */
 	public function getEntryGuiControlOptions(N2nContext $n2nContext, N2nLocale $n2nLocale): array {
 		return array(self::CONTROL_KEY => 'Default');
