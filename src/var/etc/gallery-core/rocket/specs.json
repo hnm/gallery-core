@@ -168,74 +168,74 @@
             "bulkyOrder": [
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "galleryTs.name"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "galleryTs.pathPart"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "defaultGalleryImage"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "galleryTs.description"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "galleryGroup"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "galleryImages"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "password"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "online"
                 }
             ],
             "addOrder": [
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "galleryTs.name"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "defaultGalleryImage"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "galleryTs.description"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "galleryGroup"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "password"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "online"
                 }
             ],
@@ -549,103 +549,103 @@
             "overviewOrder": [
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "galleryGroupTs.title"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "galleries"
                 }
             ],
             "detailOrder": [
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "galleryGroupTs.title"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "galleryGroupTs.pathPart"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "defaultImage"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "galleryGroupTs.intro"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "galleries"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "online"
                 }
             ],
             "editOrder": [
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "galleryGroupTs.title"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "galleryGroupTs.pathPart"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "defaultImage"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "galleryGroupTs.intro"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "galleries"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "online"
                 }
             ],
             "addOrder": [
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "galleryGroupTs.title"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "defaultImage"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "galleryGroupTs.intro"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "galleries"
                 },
                 {
                     "label": null,
-                    "type": null,
+                    "type": "item",
                     "guiIdPath": "online"
                 }
             ],
