@@ -2,19 +2,23 @@
     "name": "hnm/gallery-core",
     "type": "n2n-module",
     "description": "Gallery core module",
-    "keywords": ["gallery","n2n-module", "n2n"],
+    "keywords": [
+        "gallery",
+        "n2n-module",
+        "n2n"
+    ],
     "homepage": "https://n2n.rocks/",
     "license": "MIT",
     "authors": [
         {
-            "name": "Thomas Günther",
+            "name": "Thomas G\u00fcnther",
             "email": "guenther@hnm.ch"
         }
     ],
     "require": {
         "php": ">=7.0",
-        "n2n/n2n-composer-module-installer": "dev-master",
-        "n2n/rocket": "dev-master"
+        "n2n/n2n-composer-module-installer": "~7.1.3",
+        "n2n/rocket": "^3.0.0"
     },
     "autoload": {
         "psr-4": {
