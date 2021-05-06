@@ -29,6 +29,11 @@
 			"gallery\\core\\" : "src/app/gallery/core"
 		}
 	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"gallery\\core\\" : "src/test/gallery/core"
+		}
+	},
 	"require-dev" : {
 		"n2n/hangar" : "^8.0.0",
 		"phpunit/phpunit" : "^9.5"
