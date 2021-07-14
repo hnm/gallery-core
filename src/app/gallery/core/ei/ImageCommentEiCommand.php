@@ -1,7 +1,7 @@
 <?php
 namespace gallery\core\ei;
 
-use rocket\impl\ei\component\command\adapter\IndependentEiCommandAdapter;
+use rocket\impl\ei\component\command\IndependentEiCommandAdapter;
 use rocket\ei\util\Eiu;
 use rocket\si\control\SiIconType;
 use n2n\web\http\controller\Controller;
