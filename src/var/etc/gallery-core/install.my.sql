@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `gallery_core_gallery` (
   PRIMARY KEY (`id`),
   KEY `gallery_core_gallery_index_1` (`default_gallery_image_id`),
   KEY `gallery_core_gallery_index_2` (`gallery_group_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE IF NOT EXISTS `gallery_core_gallery_group` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `gallery_core_gallery_group` (
   `lft` int(10) unsigned DEFAULT NULL,
   `rgt` int(10) unsigned DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE IF NOT EXISTS `gallery_core_gallery_group_t` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `gallery_core_gallery_group_t` (
   `n2n_locale` varchar(12) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `gallery_core_gallery_group_t_index_1` (`gallery_group_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE IF NOT EXISTS `gallery_core_gallery_image` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS `gallery_core_gallery_image` (
   `last_mod` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `gallery_core_gallery_image_index_1` (`gallery_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE IF NOT EXISTS `gallery_core_gallery_image_t` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `gallery_core_gallery_image_t` (
   `n2n_locale` varchar(12) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `gallery_core_gallery_image_t_index_1` (`gallery_image_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE IF NOT EXISTS `gallery_core_gallery_t` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -74,4 +74,4 @@ CREATE TABLE IF NOT EXISTS `gallery_core_gallery_t` (
   `n2n_locale` varchar(12) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `gallery_core_gallery_t_index_1` (`gallery_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
