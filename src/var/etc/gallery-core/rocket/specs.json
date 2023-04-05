@@ -8,8 +8,24 @@
             "pluralLabel": "Galerien",
             "iconType": null,
             "identityStringPattern": "{galleryTs.name}",
-            "defaultSort": [],
+            "defaultSort": {
+            	"id": "DESC"
+            },
             "props": {
+            	"id": {
+            		"class": "rocket\\impl\\ei\\component\\prop\\numeric\\IntegerEiProp",
+            		"props": {
+            		    "displayInOverview": false,
+                        "displayInDetailView": false,
+                        "displayInEditView": false,
+                        "displayInAddView": false,
+                        "readOnly": true,
+                        "draftable": false
+            		},
+        		    "label": "ID",
+                    "objectProperty": "id",
+                    "entityProperty": "id"
+            	},
                 "online": {
                     "class": "rocket\\impl\\ei\\component\\prop\\bool\\OnlineEiProp",
                     "props": {
@@ -100,24 +116,6 @@
                     "label": "Bilder",
                     "objectProperty": "galleryImages",
                     "entityProperty": "galleryImages"
-                },
-                "orderIndex": {
-                    "class": "rocket\\impl\\ei\\component\\prop\\numeric\\OrderEiProp",
-                    "props": {
-                        "displayInOverview": false,
-                        "displayInDetailView": true,
-                        "displayInEditView": false,
-                        "displayInAddView": false,
-                        "constant": false,
-                        "readOnly": false,
-                        "mandatory": false,
-                        "draftable": false,
-                        "minValue": "0",
-                        "maxValue": "4294967295"
-                    },
-                    "label": "Order Index",
-                    "objectProperty": "orderIndex",
-                    "entityProperty": "orderIndex"
                 },
                 "galleryGroup": {
                     "class": "rocket\\impl\\ei\\component\\prop\\relation\\ManyToOneSelectEiProp",
