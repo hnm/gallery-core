@@ -70,7 +70,7 @@ class GalleryDao implements RequestScoped {
 	
 	public function getGalleries() {
 		return $this->em->createSimpleCriteria(Gallery::getClass(), array('online' => true), 
-				array('orderIndex' => 'ASC'))->toQuery()->fetchArray();
+				array('id' => 'DESC'))->toQuery()->fetchArray();
 	}
 	
 	/**
