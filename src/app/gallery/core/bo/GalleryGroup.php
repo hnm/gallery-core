@@ -18,7 +18,7 @@ use n2n\persistence\orm\annotation\AnnoManagedFile;
 class GalleryGroup extends ObjectAdapter {
 	private static function _annos(AnnoInit $ai) {
 		$ai->c(new AnnoTable('gallery_core_gallery_group'), new AnnoEntityListeners(ResponseCacheClearer::getClass()));
-		$ai->p('galleries', new AnnoOneToMany(Gallery::getClass(), 'galleryGroup', CascadeType::ALL), new AnnoOrderBy(array('orderIndex' => 'ASC')));
+		$ai->p('galleries', new AnnoOneToMany(Gallery::getClass(), 'galleryGroup', CascadeType::ALL), new AnnoOrderBy(array('id' => 'DESC')));
 		$ai->p('defaultImage', new AnnoManagedFile());
 		$ai->p('galleryGroupTs', new AnnoOneToMany(GalleryGroupT::getClass(), 'galleryGroup', CascadeType::ALL, null, true));
 	}
